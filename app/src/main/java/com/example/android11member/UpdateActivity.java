@@ -93,6 +93,7 @@ public class UpdateActivity extends AppCompatActivity {
             String id = c.getString(c.getColumnIndex("id"));
             String pw = c.getString(c.getColumnIndex("pw"));
             String name = c.getString(c.getColumnIndex("name"));
+
             String tel = c.getString(c.getColumnIndex("tel"));
             update_num.setText(num);
             update_id.setText(id);

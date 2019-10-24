@@ -9,7 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".UpdateActivity"></activity>
+        <provider
+            android:name=".MemberProvider"
+            android:authorities="com.example.android11member.provider"
+            android:enabled="true"
+            android:exported="true"></provider>
+
+        <activity android:name=".UpdateActivity" />
         <activity android:name=".ListAllActivity" />
         <activity android:name=".InsertActivity" />
         <activity android:name=".MainActivity">
